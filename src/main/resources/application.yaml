@@ -1,0 +1,25 @@
+#################################### common config : ####################################
+spring:
+  application:
+    name: practice
+ # 应用服务web访问端口
+  profiles:
+    active: dev
+
+management:
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: ["health","prometheus"]
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+
+
