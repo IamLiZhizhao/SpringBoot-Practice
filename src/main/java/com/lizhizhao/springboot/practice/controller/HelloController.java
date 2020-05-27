@@ -13,7 +13,6 @@ public class HelloController {
 
     @RequestMapping("/sayHello")
     public String sayHello(){
-        System.out.println("hello");
         return "hello";
     }
 }
