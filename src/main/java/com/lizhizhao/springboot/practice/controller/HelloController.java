@@ -1,5 +1,6 @@
 package com.lizhizhao.springboot.practice.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 public class HelloController {
 
+    @ApiOperation(value = "打招呼")
     @RequestMapping("/sayHello")
     public String sayHello(){
         return "hello";
