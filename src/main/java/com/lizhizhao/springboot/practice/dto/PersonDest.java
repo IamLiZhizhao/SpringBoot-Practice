@@ -11,4 +11,3 @@ public class PersonDest {
     private Integer age;
         // getters/setters omiited
 }
-    

@@ -1,4 +1,4 @@
-package com.lizhizhao.springboot.practice.service;
+package com.lizhizhao.springboot.practice.test;
 
 
 /**
