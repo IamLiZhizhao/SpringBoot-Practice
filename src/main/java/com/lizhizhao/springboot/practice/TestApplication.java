@@ -1,11 +1,8 @@
 package com.lizhizhao.springboot.practice;
 
 import com.lizhizhao.springboot.practice.service.ProviderService;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 //@SpringBootApplication
 public class TestApplication {
