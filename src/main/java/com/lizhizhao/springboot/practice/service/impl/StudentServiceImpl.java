@@ -24,13 +24,14 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public int update(StudentDO student) {
-        return studentMapper.update(student);
+    public StudentDO update(StudentDO student) {
+        this.studentMapper.update(student);
+        return this.studentMapper.queryStudentBySno(student.getSno());
     }
 
     @Override
-    public int deleteBysno(String sno) {
-        return studentMapper.deleteBysno(sno);
+    public void deleteBysno(String sno) {
+        studentMapper.deleteBysno(sno);
     }
 
     @Override

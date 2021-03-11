@@ -75,6 +75,4 @@ spring:
 #logging
 logging:
   level:
-    com.xc.springboot: debug
-
-
+    com.lizhizhao.springboot.practice.mapper: debug
