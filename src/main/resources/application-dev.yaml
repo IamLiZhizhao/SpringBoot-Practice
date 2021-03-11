@@ -4,37 +4,16 @@ server:
   port: 8080
 
 # 数据库mysql
-spring:
-  datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
-    username: root
-    password: root
-
-  kafka:
-    consumer:
-      bootstrap-servers: localhost:9092
-      # 配置消费者消息offset是否自动重置(消费者重连会能够接收最开始的消息)
-      auto-offset-reset: earliest
-    producer:
-      bootstrap-servers: localhost:9092
-      # 发送的对象信息变为json格式
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-kafka:
-  topics:
-    - name: topic1
-      num-partitions: 3
-      replication-factor: 1
-    - name: topic2
-      num-partitions: 1
-      replication-factor: 1
-    - name: topic3
-      num-partitions: 2
-      replication-factor: 1
+#spring:
+#  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+#    username: root
+#    password: root
 
 #logging
-logging:
-  level:
-    com.xc.springboot: debug
+#logging:
+#  level:
+#    com.lizhizhao.springboot.practice.service: debug
 
 
