@@ -73,6 +73,7 @@ spring:
           log-slow-sql: true
 
 #logging
+#配置日志输出级别debug以观察SQL的执行情况：
 logging:
   level:
     com.lizhizhao.springboot.practice.mapper: debug
